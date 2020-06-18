@@ -4,8 +4,8 @@ _Note: Project Calculus is a codename. The language is called SumScript._
 ### Pots
 All of SumScript is based around pots. A pot is a collection of expressions revolving around variables. You can declare a pot like so:
 ```
-pot <potname> {
-  <expressions>
+pot [potname] {
+  [expressions]
 }
 ```
 
@@ -22,7 +22,7 @@ var variable2 = 4;
 }
 ```
 
-You can then solve the value using **solve(pot.<potname>.<variable>)**. For that, we need an undefined value. Let's make a value called `undefined` and set it to the sum of `variable1` and `variable2`. Here's the updated code plus the `solve` command:
+You can then solve the value using solve(pot.[potname].[variable]). For that, we need an undefined value. Let's make a value called `undefined` and set it to the sum of `variable1` and `variable2`. Here's the updated code plus the `solve` command:
 ```
 pot pot1 {
 var variable1 = 10;
@@ -69,4 +69,53 @@ You will have noticed the extra code, here's a rundown of what it means:
 
 ---
 
-#### More information soon!
+### Pot content
+Pots can contain three types of data:
+* **Expressions** are formed of integers or variables and are comprised of operators, equal keys and variable or constant keywords.
+* **Sequences** are formed of integers in a linear or quadratic sequence. You can solve the sequence using the `find` keyword.
+* *Variable alterations* are identifiers that modify, within that pot only, a `root` variable.
+
+Here's an example of some expression content in a pot, as you've seen above:
+```
+pot pot1 {
+var a = 12
+var b = 45 + 76
+var c = a + b
+}
+
+solve(pot.pot1.c, final)
+print(final)
+```
+And here's some sequence content:
+```
+pot pot2 {
+
+  define sequence seq1 {1, 3, 7, 13, 21}
+  
+}
+
+find(pot.pot2.seq1, n)
+```
+_The n at the end of the `find` keyword denotes that the program should find the nth term._
+<br>
+And here is some variable alteration content, with a `root` area for functionality:
+```
+root {
+var a = 2
+var b = 4
+var c = 10
+}
+
+pot pot3 {
+  a += 3
+  b = a+c
+}
+
+solve(pot.pot3.b, final)
+print(final)
+```
+_This will print 15._
+
+---
+
+#### More soon!
