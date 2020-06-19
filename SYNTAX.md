@@ -1,5 +1,4 @@
-# Project Calculus - Syntax
-_Note: Project Calculus is a codename. The language is called SumScript._
+# Elixir Math - Syntax
 
 ### Pots
 All of SumScript is based around pots. A pot is a collection of expressions revolving around variables. You can declare a pot like so:
