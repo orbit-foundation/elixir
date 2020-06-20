@@ -1,6 +1,4 @@
-Reference-style: 
-![][cover]
-[cover]: https://github.com/pixelpro15/elixir/raw/master/src/logos/white/cover
+![alt text](https://github.com/pixelpro15/elixir/blob/master/cover.png)
 
 # Elixir
 ### A project by PXLTech
