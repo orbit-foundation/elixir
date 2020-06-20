@@ -1,3 +1,6 @@
+Reference-style: 
+![][cover.png]
+
 # Elixir
 ### A project by PXLTech
 
