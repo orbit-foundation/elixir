@@ -1,5 +1,6 @@
 Reference-style: 
-![][cover.png]
+![][cover]
+[cover]: https://github.com/pixelpro15/elixir/raw/master/src/logos/white/cover
 
 # Elixir
 ### A project by PXLTech
