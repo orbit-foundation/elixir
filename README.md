@@ -10,4 +10,4 @@ It comes in two forms:
 **Elixir Math** is a mathematics-based version.
 **Elixir Code** is a professional code version.
 
-**PXLTech is owned by HD Software.**
+**PXLTech is owned by the ORBIT Foundation.**
